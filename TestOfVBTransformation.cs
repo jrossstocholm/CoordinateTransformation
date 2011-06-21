@@ -1,5 +1,4 @@
 ﻿using System;
-using Ciber.Core.Coordinates.VB;
 using NUnit.Framework;
 
 namespace Coordinates.Test
@@ -99,15 +98,15 @@ namespace Coordinates.Test
             return coordinate.UTMLatitudeHemisphere;
         }
 
-        //[TestCase(4041000, 310000, CoordTrans.UTMLat.South, 45, Result = @"84° 52' 43,216"" East")]
-        //[TestCase(4041000, 310000, CoordTrans.UTMLat.South, 45, Result = @"84° 52' 43,216"" East")]
-        //[TestCase(2000000, 330000, CoordTrans.UTMLat.South, 2,  Result = @"172° 36' 23,141"" East")]
-        //[TestCase(4000000, 350000, CoordTrans.UTMLat.South, 43, Result = @"73° 19' 58,654"" East")]
-        //[TestCase(6000000, 370000, CoordTrans.UTMLat.South, 51, Result = @"121° 0' 37,292"" East")]
-        //[TestCase(8000000, 390000, CoordTrans.UTMLat.South, 27, Result = @"24° 12' 11,484"" East")]
-        //[TestCase(2000000, 410000, CoordTrans.UTMLat.South, 52, Result = @"128° 8' 58,019"" East")]
-        //[TestCase(3000000, 430000, CoordTrans.UTMLat.South, 28, Result = @"15° 42' 22,616"" East")]
-        //[TestCase(5002000, 450000, CoordTrans.UTMLat.South, 16, Result = @"87° 38' 10,593"" East")]
+        [TestCase(4041000, 310000, CoordTrans.UTMLat.South, 45, Result = @"84° 52' 43,216"" East")]
+        [TestCase(4041000, 310000, CoordTrans.UTMLat.South, 45, Result = @"84° 52' 43,216"" East")]
+        [TestCase(2000000, 330000, CoordTrans.UTMLat.South, 2, Result = @"172° 36' 23,141"" East")]
+        [TestCase(4000000, 350000, CoordTrans.UTMLat.South, 43, Result = @"73° 19' 58,654"" East")]
+        [TestCase(6000000, 370000, CoordTrans.UTMLat.South, 51, Result = @"121° 0' 37,292"" East")]
+        [TestCase(8000000, 390000, CoordTrans.UTMLat.South, 27, Result = @"24° 12' 11,484"" East")]
+        [TestCase(2000000, 410000, CoordTrans.UTMLat.South, 52, Result = @"128° 8' 58,019"" East")]
+        [TestCase(3000000, 430000, CoordTrans.UTMLat.South, 28, Result = @"15° 42' 22,616"" East")]
+        [TestCase(5002000, 450000, CoordTrans.UTMLat.South, 16, Result = @"87° 38' 10,593"" East")]
 
         [TestCase(3000000,     420000,     CoordTrans.UTMLat.North, 37, Result = @"38° 11' 34,180"" East")]
         [TestCase(3000000,     340000,     CoordTrans.UTMLat.North, 22, Result = @"52° 36' 50,940"" West")]
